@@ -10,7 +10,6 @@
     url("/images/why-background.png") center / cover no-repeat;
 }
 
-
   .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -49,9 +48,9 @@
 
   .img-front {
     position: absolute;
-    bottom: -40px;
-    right: -40px;
-    width: 85%;
+    bottom: -50px;
+    right: -50px;
+    width: 90%;
     z-index: 2;
   }
 }
@@ -59,7 +58,7 @@
 .how-it-works {
   background: #333;
   color: #fff;
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
 
   .container {
     max-width: 1100px;
@@ -117,44 +116,3 @@
   }
 }
 
-.destinations {
-  background: #222;
-}
-
-.destination {
-  min-height: 700px;
-  display: flex;
-  align-items: center;
-
-  background-image: url("/assets/house.png");
-  background-size: cover;
-  background-position: center;
-
-  &__content {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 3rem;
-    max-width: 540px;
-    margin-left: 12%;
-    color: #e8e8e8;
-  }
-
-  &__country {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    font-family: "Josefin Sans", sans-serif;
-  }
-
-  &__title {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.6rem;
-    margin: 1rem 0;
-    color: #fff;
-  }
-
-  &__text {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-  }
-}

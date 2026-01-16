@@ -1,0 +1,46 @@
+.testimonial {
+  min-height: 90vh;
+  background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+    url("/images/testimonials-bg.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    color: #fff;
+    margin-bottom: 4rem;
+    font-size: 1.6rem;
+  }
+
+  &__card {
+    display: flex;
+    background: rgba(20, 20, 20, 0.9);
+    max-width: 900px;
+    color: #fff;
+  }
+
+  img {
+    width: 300px;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 2.5rem;
+
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      opacity: 0.85;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.destination {
+  min-height: 70vh;
+  padding: 4rem 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+}
+
+.destination__content {
+  background: $overlay;
+  padding: 3rem;
+  max-width: 540px;
+}
+
+.destination__country {
+  font-size: 0.75rem;
+  letter-spacing: 0.15rem;
+  color: #fff;
+}
+
+.destination__title {
+  margin: 1rem 0;
+  letter-spacing: 0.1rem;
+  color: #fff;
+}
+
+.destination__text {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.destination--first {
+  background-image: url("/images/house.png");
+  justify-content: flex-start;
+  padding-left: 10%;
+}
+
+.destination--center {
+  background-image: url("/images/mountain.png");
+  justify-content: center;
+
+  .destination__content {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .destination {
+    justify-content: center;
+
+    &__content {
+      margin: 0 1rem;
+      padding: 2rem;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .destination__content {
+    padding: 1.5rem;
+  }
+
+  .destination__text {
+    font-size: 0.8rem;
+  }
+}
