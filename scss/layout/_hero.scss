@@ -1,0 +1,37 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("../assets/hero.png") center / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+
+  .hero-content {
+    max-width: 600px;
+    padding: 1rem;
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      letter-spacing: 0.3rem;
+    }
+
+    p {
+      margin: 1rem 0 2rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+}
+
+.scroll-down {
+  display: inline-block;
+  margin-top: 3rem; 
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  opacity: 0.9;
+}
