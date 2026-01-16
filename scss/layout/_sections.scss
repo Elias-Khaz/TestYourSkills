@@ -1,0 +1,160 @@
+.why-choose-us {
+  padding: 6rem 1rem 10rem; 
+  color: #fff;
+
+  background:
+    linear-gradient(
+      rgba(35, 35, 35, 0.6),
+      rgba(35, 35, 35, 0.7)
+    ),
+    url("/images/why-background.png") center / cover no-repeat;
+}
+
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    opacity: 0.85;
+  }
+
+  .why-images {
+  position: relative;
+  max-width: 480px;
+  margin-left: auto;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .img-back {
+    position: relative;
+    z-index: 1;
+  }
+
+  .img-front {
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    width: 85%;
+    z-index: 2;
+  }
+}
+
+.how-it-works {
+  background: #333;
+  color: #fff;
+  padding: 5rem 1rem;
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    text-align: center;
+  }
+
+  &::before {
+      content: "";
+      position: absolute;
+      top: 45px;
+      left: 8%;
+      right: 8%;
+      height: 2px;
+      background: #777;
+      z-index: 0;
+    }
+
+  .step-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 2rem;
+      color: $primary;
+    }
+  }
+
+    .step--search i {
+        color: #5474fd;
+    }   
+
+    .step--select i {
+        color: #FF6363;
+    }
+
+    .step--book i {
+        color: #00A2FF;
+    }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.destinations {
+  background: #222;
+}
+
+.destination {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+
+  background-image: url("/assets/house.png");
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+    max-width: 540px;
+    margin-left: 12%;
+    color: #e8e8e8;
+  }
+
+  &__country {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  &__title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: #fff;
+  }
+
+  &__text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+}

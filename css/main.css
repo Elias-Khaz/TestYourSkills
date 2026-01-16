@@ -476,6 +476,202 @@ body {
   opacity: 0.9;
 }
 
+.why-choose-us {
+  padding: 6rem 1rem 10rem;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 35, 35, 0.6)), to(rgba(35, 35, 35, 0.7))), url("/images/why-background.png") center/cover no-repeat;
+  background: linear-gradient(rgba(35, 35, 35, 0.6), rgba(35, 35, 35, 0.7)), url("/images/why-background.png") center/cover no-repeat;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3rem 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  opacity: 0.85;
+}
+
+.why-images {
+  position: relative;
+  max-width: 480px;
+  margin-left: auto;
+}
+.why-images img {
+  width: 100%;
+  display: block;
+}
+.why-images .img-back {
+  position: relative;
+  z-index: 1;
+}
+.why-images .img-front {
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  width: 85%;
+  z-index: 2;
+}
+
+.how-it-works {
+  background: #333;
+  color: #fff;
+  padding: 5rem 1rem;
+}
+.how-it-works .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3rem 1fr 3rem 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  text-align: center;
+}
+.how-it-works::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 8%;
+  right: 8%;
+  height: 2px;
+  background: #777;
+  z-index: 0;
+}
+.how-it-works .step-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.how-it-works .step-icon i {
+  font-size: 2rem;
+  color: #5474fd;
+}
+.how-it-works .step--search i {
+  color: #5474fd;
+}
+.how-it-works .step--select i {
+  color: #FF6363;
+}
+.how-it-works .step--book i {
+  color: #00A2FF;
+}
+.how-it-works h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.destinations {
+  background: #222;
+}
+
+.destination {
+  min-height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("/assets/house.png");
+  background-size: cover;
+  background-position: center;
+}
+.destination__content {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 3rem;
+  max-width: 540px;
+  margin-left: 12%;
+  color: #e8e8e8;
+}
+.destination__country {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+.destination__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  color: #fff;
+}
+.destination__text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #5474fd;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: rgb(33.5895953757, 75.0231213873, 252.4104046243);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-family: "Aleo", serif;
+  font-size: 0.9rem;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  color: #fff;
+  background: #5474fd;
+  -webkit-transition: 0.2s ease, -webkit-transform 0.2s ease;
+  transition: 0.2s ease, -webkit-transform 0.2s ease;
+  transition: 0.2s ease, transform 0.2s ease;
+  transition: 0.2s ease, transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+.btn:hover, .btn:focus {
+  background: rgb(58.7947976879, 95.5115606936, 252.7052023121);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
 .search-form {
   display: -webkit-box;
   display: -ms-flexbox;

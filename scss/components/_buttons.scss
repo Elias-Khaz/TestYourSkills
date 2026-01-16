@@ -1,0 +1,37 @@
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: $primary;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: darken($primary, 10%);
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-family: "Aleo", serif;
+  font-size: 0.9rem;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  color: #fff;
+  background: #5474fd;
+  transition: 0.2s ease, transform 0.2s ease;
+
+  &:hover,
+  &:focus {
+    background: darken(#5474fd, 5%);
+    transform: translateY(-2px);
+  }
+}
